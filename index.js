@@ -54,10 +54,3 @@ function checkpressed(check) {
       console.log(check);
   }
 }
-function addAnimation(key) {
-  var pressed = document.querySelector("." + key);
-  pressed.classList.add("pressed");
-  setTimeout(function () {
-    pressed.classList.remove("pressed");
-  }, 300);
-}
