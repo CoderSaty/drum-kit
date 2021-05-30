@@ -60,19 +60,7 @@ footer {
   margin: 10% auto;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
 
-.pressed {
-  box-shadow: 0 3px 4px 0 #dbedf3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
-}
 
 .drum {
   outline: none;
@@ -108,27 +96,34 @@ footer {
   transition: 1s;
 }
 .social-links a i:hover {
-  background: #fff;
+  background: #e94560;
 }
-.bottom center {
+.bottom .center {
   margin-top: 1rem;
   padding: 5px;
   font-size: 1rem;
 }
-.bottom center span {
+.bottom .center span,p {
   color: #fff;
 }
-.bottom center a {
+.bottom .center a {
   color: #e94560;
   text-decoration: none;
 }
-.bottom center a:hover {
+.bottom .center a:hover {
   text-decoration: none;
+}
+.warning {
+  display:none;
+  margin:1rem;
 }
 @media only screen and (max-width: 500px) {
   .drum {
     height: 100px;
     width: 100px;
     font-size: 0rem;
+  }
+  .warning{
+    display:block;
   }
 }
