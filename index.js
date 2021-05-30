@@ -1,12 +1,14 @@
 var a = document.querySelectorAll(".drum");
 for (var i = 0; i < a.length; i++) {
   a[i].addEventListener("click", function () {
-    var check = this.textContent;
+    var check = this.innerHTML;
     checkpressed(check);
+    animate(check);
   });
 }
 document.addEventListener("keydown", function (e) {
   checkpressed(e.key);
+  animate(e.key);
 });
 function checkpressed(check) {
   switch (check) {
@@ -49,4 +51,11 @@ function checkpressed(check) {
     default:
       console.log(check);
   }
+}
+function animate(ele) {
+  var animated = document.querySelector("." + ele);
+  animated.classList.add("pressed");
+  setTimeout(function () {
+    animated.classList.remove("pressed");
+  }, 100);
 }

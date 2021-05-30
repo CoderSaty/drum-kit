@@ -127,3 +127,6 @@ footer {
     display:block;
   }
 }
+.pressed{
+  opacity:0.5;
+}
